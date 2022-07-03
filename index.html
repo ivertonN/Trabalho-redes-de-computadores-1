@@ -74,16 +74,109 @@
 
     <figure>
         <img src="arquitetura_comunicacao.png" alt="arquitetura_comunicacao">
-        <figcaption>Figura 4</figcaption>
+        <figcaption>Figura 6</figcaption>
     </figure>
   </div>
 
   <div class='conteudo' id='padroes' style="padding:0 16px">
     <h3>Padroes de Redes Veiculares</h3>
     <p>
-        Os primeiros esforços para padrões de redes de computadores veiculares foram desenvolvidos nos anos 1990 pela Organização Internacional para Padronização (ISO) e a Associação de Fabricação de Automóveis (OICA). Esses esforços foram baseados nas tecnologias de rede existentes, como a rede Ethernet e o protocolo TCP / IP. No entanto, eles foram adaptados para atender às necessidades específicas de veículos, como a mobilidade e a segurança. Em 1999, a Associação de Fabricação de Automóveis (OICA) publicou o primeiro padrão de rede veicular, chamado de Interconexão Padrão de Veículos (VPIC). Nos anos 2000, a Sociedade de Engenharia Elétrica e Eletrônica (IEEE) iniciou o desenvolvimento de um padrão de rede veicular próprio, o IEEE 802.11p. Esse padrão foi finalizado em 2010 e é atualmente o padrão de rede veicular mais amplamente utilizado.
-
+        os primeiros para padronizar as redes veiculas esforços foram baseados nas tecnologias de rede existentes. 
+        No entanto, eles foram e estão ainda sendo adaptados para atender às necessidades específicas da Rede Veicular, 
+        como a mobilidade e a segurança.
     </p>
+
+    <p>
+        Esses esforços iniciaram em 1999, quando a FCC (Federal Communications Commission) nos Estados Unidos alocou uma faixa do espectro 
+        de frequências para aplicacoes DSRC ( Dedicated Short Range Communications ) de uso livre e sem restriçoes de tecnologia.
+
+        A alocação realizada pela FCC foi feita segundo a figura 5 abaixo.
+    </p>
+
+    <figure>
+        <img src="padroes_alocacao_fcc.jpg" alt="padroes_alocacao_fcc">
+        <figcaption>Figura 5</figcaption>
+    </figure>
+
+    <h3>Arquitetura WAVE</h3>
+
+    <p>
+        A arquitetura WAVE (Wireless Acces in the Vehicular Environment) é formada por seis documentos: 
+        IEEE P1609.1, IEEE P1609.2, IEEE P1609.3, IEEE P1609.4, IEEE 802.11 e IEEE 802.11p.
+        Através de todos os seus padroes ela define outras camadas da pilha de protocolo. Como podemos ver na imagem abaixo. 
+    </p>
+
+    <figure>
+        <img src="padroes_wave.jpg" alt="padroes_wave">
+        <figcaption>Figura 4</figcaption>
+    </figure>
+
+    <h3>familia IEEE 802.11 (IEEE 802.11p)</h3>
+
+    <p>
+        Apostando na tecnologia sem fio, em 1990 o IEEE (Institute of Electrical and Eletronics Engineers) constituiu um grupo de pesquisa responsável 
+        pelo padrão IEEE 802.11, padrão este que viria a ser o principal padrão para redes sem fio.
+        Este projeto ficou parado por anos antes que fosse possível de ser tirado do papel devido a limitaçoes tecnologicas.
+    </p>
+
+    <p>
+        Em 2004, dentro deste mesmo grupo, a IEEE iniciou a padronização de redes veiculares sob o padrão IEEE 802.1p, 
+        Este padrão foi criado com base no padrão IEEE 802.1a e finaliza em 2010. 
+        Ele define as camadas físicas e de controle de acesso ao meio (MAC) para redes veiculares.
+
+
+
+        Finalmente, o adendo IEEE 802.11p [Jiang e ´ Delgrossi 2008] define
+as diferenc¸as espec´ıficas do controle de acesso ao meio em ambientes de comunicac¸ao˜
+WAVE com relac¸ao ao IEEE 802.11 tradicional. 
+    </p>
+
+    <h3>familia IEEE 1609</h3>
+
+    <p>
+        fam´ılia IEEE 1609 definem um conjunto de padroes para a ˜
+        comunicac¸ao em ambientes veiculares de comunicac¸ ˜ ao sem-fio, ou ambientes WAVE
+    </p>
+
+    <h4>IEEE P1609.1</h4>
+
+    <p>
+        especifica servic¸os e interfaces da aplicac ˜ ¸ao de ˜
+Gerenciamento de Recursos da arquitetura WAVE
+        
+        A arquitetura WAVE possui duas unidades que auxiliam no processamento e encaminhamento dos dados que trafega pela rede. Essas unidades sÃ£o conhecidas como : Unidades de Acostamento (RSUs) que sÃ£o dispositivos estÃ¡ticos que hospedam aplicaÃ§Ãµes e realizam serviÃ§os e Unidades de Bordo (OBUs) que executam aplicaÃ§Ãµes de um determinado serviÃ§o. Dessa forma, o padrÃ£o IEEE P1609.1 Ã© quem "coordena" a comunicaÃ§Ã£o entre as unidades.
+    </p>
+
+    <h4>IEEE P1609.2</h4>
+
+    <p>
+        define formatos e
+processamento seguros de mensagens
+
+        PadrÃ£o responsÃ¡vel pela seguranÃ§a da rede. AtravÃ©s dele Ã© definido formatos e processamento de mensagens seguros. AlÃ©m disso, tambÃ©m define quando se deve utilizar uma mensagem segura e como ocorrerÃ¡ o processamento dessa mensagem.
+    </p>
+
+    <h4>IEEE P1609.3</h4>
+
+    <p>
+        especifica os servic¸os das camadas de rede e de transporte, incluindo o enderec¸amento e o roteamento
+        Alem disso, ´
+o padrao 1609.3 define a MIB ( ˜ Management Information Base) para a pilha WAVE
+
+
+        PadrÃ£o que define os serviÃ§os das camadas de rede e de transporte. Para isso, sÃ£o definidos os planos de gerenciamento e o plano de dados.
+
+        Plano de Gerenciamento - Ã‰ responsÃ¡vel pela manutenÃ§Ã£o e configuraÃ§Ã£o do sistema.
+        
+        Plano de Dados - Ã‰ responsÃ¡vel pelos serviÃ§os de comunicaÃ§Ã£o e envio dos dados produzidos pelas aplicaÃ§Ãµes WAVE.
+    </p>
+
+    <h4>IEEE P1609.4</h4>
+
+    <p>
+        PadrÃ£o que define a utilizaÃ§Ã£o de mÃºltiplos canais pela arquitetura WAVE.
+    </p>
+
   </div>
 
   <div class='conteudo' id='calculo_rotas' style="padding:0 16px">
@@ -91,7 +184,7 @@
     <p>
         o calculo de rotas é um dos pontos fundamentais tanto em redes veículares, como em outros tipos de rede, pois define o caminho que os pacotes 
         irão percorrer pela rede. Seu maior desafio nessa aplicação tem como base a propria natureza de rede veícular, que é extremamente instável 
-        e apresenta no´s moveis.
+        e apresenta nos moveis.
 
         Para realizar o cálculo de rotas é necessário a utilização de alguns protocolos que de acordo com suas caracteristicas, 
         podem ser divididos nas categorias abaixo:
@@ -342,6 +435,7 @@ TrafficView, SOTIS, Eureka-PROMETHEUS
             IEEE Transactions on Vehicular Technology, 57(6):3333–3340.</li>
         <li> Yousefi, S., Altman, E., El-Azouzi, R. e Fathy, M. (2008). Analytical model for 
             connectivity in vehicular ad hoc networks. IEEE Transactions on Vehicular Technology, 57(6):3341–3356.</li>
+        <li> https://www.gta.ufrj.br/grad/01_2/802-mac/R802_11.htm</li>
       </ol>
   </div>
 
@@ -352,6 +446,12 @@ TrafficView, SOTIS, Eureka-PROMETHEUS
         <li>Time-Critical Data Delivery for Emergency Applications in Vehicle-to-Vehicle Communication - Scientific Figure on ResearchGate. Available from: https://www.researchgate.net/figure/A-Vehicular-Ad-hoc-Network-VANET-showing-an-emergency-event-caused-by-an-accident_fig1_331523515 [accessed 3 Jul, 2022]</li>
         <li>Mahi, M.J.N., Chaki, S., Ahmed, S., Tamanna, I., Biswas, M. (2022). LCADP: a Low-Cost Accident Detection Prototype for a Vehicular Ad Hoc Network. In: Kaiser, M.S., Ray, K., Bandyopadhyay, A., Jacob, K., Long, K.S. (eds) Proceedings of the Third International Conference on Trends in Computational and Cognitive Engineering. Lecture Notes in Networks and Systems, vol 348. Springer, Singapore. https://doi.org/10.1007/978-981-16-7597-3_32</li>
         <li>Farsimadan, E., Palmieri, F., Moradi, L., Conte, D., Paternoster, B. (2021). Vehicle-to-Everything (V2X) Communication Scenarios for Vehicular Ad-hoc Networking (VANET): An Overview. In: , et al. Computational Science and Its Applications – ICCSA 2021. ICCSA 2021. Lecture Notes in Computer Science(), vol 12956. Springer, Cham. https://doi.org/10.1007/978-3-030-87010-2_2</li>
+        <li>R. Alves, I. Campbell, R. Couto, M. Campista, I. Moraes, M. Rubinstein,
+            L. Costa, O. C. M. B. Duarte, and M. Abdalla, Redes Veiculares: Princípios,
+            Aplica c ̃oes e Desafios, pp. 199–254. 05 2009.</li>
+        <li>R. Alves, I. Campbell, R. Couto, M. Campista, I. Moraes, M. Rubinstein,
+            L. Costa, O. C. M. B. Duarte, and M. Abdalla, Redes Veiculares: Princípios,
+            Aplica c ̃oes e Desafios, pp. 199–254. 05 2009.</li>
     </ol>
   </div>
 
