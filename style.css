@@ -64,3 +64,11 @@ body {
   .conteudo {
     display: none;
   }
+
+  .conteudo * {
+    padding: 0 16px;
+  }
+
+  .conteudo_inicial * {
+    padding: 0 16px;
+  }
