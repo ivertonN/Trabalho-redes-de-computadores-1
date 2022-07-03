@@ -145,42 +145,127 @@ TrafficView, SOTIS, Eureka-PROMETHEUS
 
   <div class='conteudo' id='desafios' style="padding:0 16px">
     <h3>Desafios</h3>
-    <p>
-        \begin{itemize}
-    
-    \item Endereçamento
-    
-    \lipsum[1]
-    
-    \item Simulação
-    
-    \lipsum[1]
-    
-    \item Transporte
-    
-    \lipsum[1]
-    
-    \item Segurança
-    
-    \lipsum[1]
-    
-    \item Massa crítica
-    
-    \lipsum[1]    
-    
-    \item Massa crítica
-    
-    \lipsum[1]
-    
-\end{itemize}
+
+    <p> As redes Veiculares apresentam diversos tipos de desafios, que estão extremamente ligados às características
+         especificas dessa rede, como nos extremamente dinâmicos e escalabilidade da rede, já que podemos ter desde 
+         alguns poucos nos até milhares de nos.
+
+         Abaixo listamos alguns desafios: 
     </p>
+
+    <ul>
+        <li>Endereçamento</li>
+
+        <p>
+            A forma clássica de atribuiçoes de endereços é feita de forma hierarquica, porém, para esta abordagem são necessários
+            nos estáticos. Devido ao alto dinamismo de nos presente nas Redes veiculares, é preciso resolver o problema de outras formas.
+        </p>
+
+        <p>
+            Para resolver esse problema, é necessário o desenvolvimento de protocolos de atribuição de endereços que considerem a
+            topologia e o padrão de mobilidade das redes veiculares.
+        </p>
+
+        <li>Simulação</li>
+
+        <p>
+            Uma das etapas mais complexas e difíceis de se realizar está relacionada à simulação do ambiente de redes veículares.
+            Esta etapa é extremamente importante para realização de testes e avaliação de desempenho das abordagens propostas.
+            Entretanto, é extremamente difícil reproduzir as mesmas confiçoes que encontramos na vida real, pela quantidade 
+            de variáveis envolvidas. 
+        </p>
+
+        <li>Transporte</li>
+
+        <p>
+            os principais desafios relacionado ao transporte vêm do fato das Redes Veiculares serem essencialmente redes sem fio moveis.
+            o emprego do protocolo TCP (desenvolvido para redes cabeadas) nas redes sem fio gera alguns problemas, como os abaixo:
+            <ul>
+                <li> Confiabilidade </li>
+                <p> 
+                    Para garantir confiabilidade, o TCP possui alguns algoritmos de tratamento de falhas. Entretanto, a origem das falhas
+                    das redes veiculares são diferentes das redes cabeadas. Portanto, além de não tratar corretamente as falhas necessárias,
+                    o TCP prejudica a performance em redes veiculares tratando falhas que talvez não sejam tão impactantes.
+                </p>
+
+                <li> Estabelecimento da conexão </li>
+                <p> 
+                    TCP exige uma conexão inicial para estabelecimento de contato, porém os nos estão em contato durante um 
+                    perido curto de tempo. que pode não ser o suficiente para estabelecer esta conexão. 
+                </p>
+            </ul> 
+
+            Assim, as principais abordagens focam em modificacoes para adequar o TCP às Redes Veiculares.
+        </p>
+
+        <li>Segurança</li>
+
+        <p>
+            os principais problemas relacionados a segurança em redes veiculares estão relacionados a possível 
+            existência de nos maliciosos. Esse problema em redes veiculares é muito mais importante, pois pode colocar
+            em risco a vida de pessoas.
+        </p>
+
+        <p>
+            os principais tipos de ataques podem ser classificados em:
+
+            <ul>
+                <li> Ataques por desinformação </li>
+                
+                <p> 
+                    Usuários internos divulgam informaçoes falsas pela rede, para ganhar perturbar o funcionamento 
+                    ou obter ganhos pessoais 
+                </p>
+                
+                <li> Ataques por rastreamento </li>
+
+                <p> 
+                    objetivo de determinar localização de um veículo ou grupo de veículos.
+                </p>
+
+                <li> Negação de serviço </li>
+
+                <p> 
+                    Ataque clássico de negação de serviço, onde um usuário ou grupo de usuários sobrecarrega 
+                    os recursos da rede, causando mal funcionamento ou até mesmo a derrubando. 
+                </p>
+
+            </ul>
+        </p>
+
+        <li>Massa crítica</li>
+
+        <p>
+            Um dos grandes problemas existentes em Redes Veiculares ocorre pois para o bom funcionamento de diversos 
+            tipos de aplicacoes, é necessário um número mínimo de veículos equipados com a tecnologia. E nem sempre é possível
+            alcançar este número mínimo em um cenário real, em função do alto dinamismo dos nos e também de outro fator importante, 
+            que é a lente adoção da tecnologia. 
+        </p>
+
+        <p>
+            Para resolver este problema precisamos implantar abordagens que aumentem a adoção da tecnologia. Para isso é preciso
+            aumentar o valor agregado sem depender de mais conectividade (nos na rede). Assim, surge a necessidade de aplicacoes
+            que não sejam dependentes de comunicação direta entre os veiculos utilizando de infraestruturas para isso. Mesmo que isso
+            aumente o custo da operação, se mostra uma solução palpável para resolver o problema inicialmente e influenciar a maior adoção
+            da tecnologia.
+        </p>
+
+      </ul>
+    
   </div>
 
   <div class='conteudo' id='perguntas' style="padding:0 16px">
     <h3>Perguntas</h3>
-    <p>
-        abcabcabcabjscnaifbadkla,f.aekbfhawd
-    </p>
+    <ol>
+        <li>Pergunta 1?</li>
+        
+        <p> Resposta 1 </p>
+
+        <li>Pergunta 2?</li>
+
+        <p> Resposta 2 </p>
+
+      </ol>
   </div>
 
   <div class='conteudo' id='conclusao' style="padding:0 16px">
@@ -193,8 +278,12 @@ TrafficView, SOTIS, Eureka-PROMETHEUS
   <div class='conteudo' id='referencias' style="padding:0 16px">
     <h3>Referências</h3>
     <ol>
-        <li>ref 1</li>
-        <li>ref 2</li>
+        <li>R. Alves, I. Campbell, R. Couto, M. Campista, I. Moraes, M. Rubinstein,
+            L. Costa, O. C. M. B. Duarte, and M. Abdalla, Redes Veiculares: Princípios,
+            Aplica c ̃oes e Desafios, pp. 199–254. 05 2009.</li>
+        <li>T. H. Luan, Y. Zhang, L. Cai, Y. Hui, C. Li, and N. Cheng, “Autonomous
+            vehicular networks: Perspective and open issues,” CoRR, vol. abs/2112.01154,
+            2021.</li>
         <li>ref 3</li>
       </ol>
   </div>
