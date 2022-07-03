@@ -35,6 +35,7 @@
   <a class='menu' href="#" data="perguntas">Perguntas</a>
   <a class='menu' href="#" data="conclusao">Conclusão</a>
   <a class='menu' href="#" data="referencias">Referências</a>
+  <a class='menu' href="#" data="referencias_figuras">Referências Figuras</a>
 </div>
 
 <div class='conteudo_inicial' id='introducao' style="padding:0 16px">
@@ -88,50 +89,53 @@
   <div class='conteudo' id='calculo_rotas' style="padding:0 16px">
     <h3>Calculo de Rotas</h3>
     <p>
-        o calculo de rotas é um dos pontos fundamentais tanto em redes veículares, como em outros tipos de rede, pois define o caminho que os pacotes irão percorrer pela rede. Seu maior desafio nessa aplicação tem como base a propria natureza de rede veícular, que é extremamente instável e apresenta no´s moveis.
+        o calculo de rotas é um dos pontos fundamentais tanto em redes veículares, como em outros tipos de rede, pois define o caminho que os pacotes 
+        irão percorrer pela rede. Seu maior desafio nessa aplicação tem como base a propria natureza de rede veícular, que é extremamente instável 
+        e apresenta no´s moveis.
 
-        Para realizar o cálculo de rotas é necessário a utilização de alguns protocolos que de acordo com suas caracteristicas, podem ser divididos nas categorias abaixo:
+        Para realizar o cálculo de rotas é necessário a utilização de alguns protocolos que de acordo com suas caracteristicas, 
+        podem ser divididos nas categorias abaixo:
         
-        \begin{itemize}
-            
-            \item \textbf{Baseado em topologia}:
-            
-            Protocolos que tem como objetivo encontrar o melhor caminho na rede entre 2 pares da rede, seja minimizando o tempo para envio do pacote ou custo.
+        <ul>
+            <li><b> Baseado em topologia </b></li>
+            <p>
+                Protocolos que tem como objetivo encontrar o melhor caminho na rede entre 2 pares da rede, seja minimizando o tempo para envio do pacote ou custo.
         
-            São classificados em:
-        
-            \begin{itemize}
+                São classificados em:
+                <ul>
+                    <li><b> Proativos: </b></li> <p> Mantém lista de rotas atualizadas para todos os nos da rede. </p>
+                    <li><b> Reativos: </b></li> <p> Criam a rota quando necessário. </p>
+                    <li><b> Híbridos: </b></li> <p> Realiza uma operação híbrida, por exemplo, pode manter uma lista das rotas mais utilizadas. </p>
+                </ul>
                 
-                \item Proativos: Mantém lista de rotas atualizadas para todos os nos da rede. 
+                A semelhança entre redes ad hoc e redes veiculares permite a facilidade da reutilização de diversos protocolos. Entretanto, algumas especificidades das redes veiculares impactam negativamente as redes veiculares, como baixo desempenho e alto tráfego de mensagens de controle.
                 
-                \item Reativos: Criam a rota quando necessário.
-                
-                \item Híbridos: Realiza uma operação híbrida, por exemplo, pode manter uma lista das rotas mais utilizadas
-        
-            \end{itemize}
+                Entre seus protocolos, podemos citar: AODV e PBR
+            </p>
+
+            <li><b> Baseado em posicionamento ou geográfico </b></li>
+            <p>
+                Protocolos que tem como objetivo dar escalabilidade para as redes veículares, sem a necessidade de armazenamento de rotas para tod  s os nos da rede. Para isso, as requisiçoes da origem são dispersadas pela rede através de seus vizinhos em direção ao destino. Sendo necessário saber perviamente a localização dos vizinhos e do destinatário no momento do envio das requisiçoes,
             
-            A semelhança entre redes ad hoc e redes veiculares permite a facilidade da reutilização de diversos protocolos. Entretanto, algumas especificidades das redes veiculares impactam negativamente as redes veiculares, como baixo desempenho e alto tráfego de mensagens de controle.
-            
-            Entre seus protocolos, podemos citar: AODV e PBR
-            
-            \item \textbf{Baseado em posicionamento ou geográfico}:
-            
-            Protocolos que tem como objetivo dar escalabilidade para as redes veículares, sem a necessidade de armazenamento de rotas para tod  s os nos da rede. Para isso, as requisiçoes da origem são dispersadas pela rede através de seus vizinhos em direção ao destino. Sendo necessário saber perviamente a localização dos vizinhos e do destinatário no momento do envio das requisiçoes,
-            
-            Entre seus protocolos, podemos citar: GPSR, GSR, SAR, A-STAR, CAR e LOUVRE
-        
-            \item \textbf{oportunismo}
-        
-            Tem como objetivo lidar com os possíveis atrasos e desconexoes que podem surgir nas redes veículares, seja em razão de vias pouco movimentadas ou a gradual adoção dessas redes.
+                Entre seus protocolos, podemos citar: GPSR, GSR, SAR, A-STAR, CAR e LOUVRE
+            </p>
+
+            <li><b> oportunismo </b></li>
+            <p>
+                Tem como objetivo lidar com os possíveis atrasos e desconexoes que podem surgir nas redes veículares, seja em razão de vias pouco movimentadas ou a gradual adoção dessas redes.
             
             Entre seus protocolos, podemos citar: MoVe, MaxProp, SKVR, VADD, L-VADD, D-VADD, H-VADD.
-            
-            \item \textbf{Disseminação}
-        
-            Este último tem como objetivo enviar mensagens para vários destinatários utilizando proximos, pois é utilizado em aplicaçoes onde temos o objetivo de disseminar informação de forma eficiente e rápida pela rede, como por exemplo, acidentes, emergências, congestionamentos ou aplicaçoes baseadas em localização.
+            </p>
+
+            <li><b> Disseminação </b></li>
+
+            <p>
+                Este último tem como objetivo enviar mensagens para vários destinatários utilizando proximos, pois é utilizado em aplicaçoes onde temos o objetivo de disseminar informação de forma eficiente e rápida pela rede, como por exemplo, acidentes, emergências, congestionamentos ou aplicaçoes baseadas em localização.
         
             Entre seus protocolos, podemos citar: UMB, SODAD e ZOR.
+            </p>
 
+        </ul>
     </p>
   </div>
 
@@ -341,7 +345,7 @@ TrafficView, SOTIS, Eureka-PROMETHEUS
       </ol>
   </div>
 
-  <div class='conteudo' id='figuras' style="padding:0 16px">
+  <div class='conteudo' id='referencias_figuras' style="padding:0 16px">
     <h3>Figuras</h3>
     <ol>
         <li>Relat\'orio T\'ecnico: Controle Distribu\'ido de Tr\'afego Baseado em Ve\'iculos Conectados e Comunica\c{c}\~oes Veiculares Centradas em Interesses - Scientific Figure on ResearchGate. Available from: https://www.researchgate.net/figure/Figura-21-Modelos-de-comunicacao-em-redes-ad-hoc-veiculares_fig1_318868405 [accessed 3 Jul, 2022]</li>
