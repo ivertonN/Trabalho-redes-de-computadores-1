@@ -66,9 +66,11 @@ body {
   }
 
   .conteudo * {
-    padding: 0 16px;
+    margin-left: 16px;
+    margin-right: 16px;
   }
 
   .conteudo_inicial * {
-    padding: 0 16px;
+    margin-left: 16px;
+    margin-right: 16px;
   }
