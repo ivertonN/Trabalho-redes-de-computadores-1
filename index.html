@@ -101,8 +101,8 @@
     <h3>Arquitetura WAVE</h3>
 
     <p>
-        A arquitetura WAVE (Wireless Acces in the Vehicular Environment) é formada por seis documentos: 
-        IEEE P1609.1, IEEE P1609.2, IEEE P1609.3, IEEE P1609.4, IEEE 802.11 e IEEE 802.11p.
+        A arquitetura WAVE (Ambiente Veicular de rede sem fio) é formada pelos seguintes documentos: 
+        IEEE P1609.1, IEEE P1609.2, IEEE P1609.3, IEEE P1609.4, IEEE 1609.11 e IEEE 802.11p.
         Através de todos os seus padroes ela define outras camadas da pilha de protocolo. Como podemos ver na imagem abaixo. 
     </p>
 
@@ -122,59 +122,53 @@
     <p>
         Em 2004, dentro deste mesmo grupo, a IEEE iniciou a padronização de redes veiculares sob o padrão IEEE 802.1p, 
         Este padrão foi criado com base no padrão IEEE 802.1a e finaliza em 2010. 
-        Ele define as camadas físicas e de controle de acesso ao meio (MAC) para redes veiculares.
-
-
-
-        Finalmente, o adendo IEEE 802.11p [Jiang e ´ Delgrossi 2008] define
-as diferenc¸as espec´ıficas do controle de acesso ao meio em ambientes de comunicac¸ao˜
-WAVE com relac¸ao ao IEEE 802.11 tradicional. 
+        Ele define as camadas físicas e de controle de acesso ao meio em ambientes de comunicação WAVE.
     </p>
 
     <h3>familia IEEE 1609</h3>
 
     <p>
-        fam´ılia IEEE 1609 definem um conjunto de padroes para a ˜
-        comunicac¸ao em ambientes veiculares de comunicac¸ ˜ ao sem-fio, ou ambientes WAVE
+        A família de padroes IEEE 1609 definem um conjunto de padroes para a comunicação em ambientes WAVE.
     </p>
 
     <h4>IEEE P1609.1</h4>
 
     <p>
-        especifica servic¸os e interfaces da aplicac ˜ ¸ao de ˜
-Gerenciamento de Recursos da arquitetura WAVE
-        
-        A arquitetura WAVE possui duas unidades que auxiliam no processamento e encaminhamento dos dados que trafega pela rede. Essas unidades sÃ£o conhecidas como : Unidades de Acostamento (RSUs) que sÃ£o dispositivos estÃ¡ticos que hospedam aplicaÃ§Ãµes e realizam serviÃ§os e Unidades de Bordo (OBUs) que executam aplicaÃ§Ãµes de um determinado serviÃ§o. Dessa forma, o padrÃ£o IEEE P1609.1 Ã© quem "coordena" a comunicaÃ§Ã£o entre as unidades.
+        Controla a comunicação entre as duas unidades que auxiliam o fluxo de dados pela rede.
+        controla a comunicação entre as duas e descreve os componentes básicos da arquitetura WAVE e das mensagens de comando.
     </p>
 
     <h4>IEEE P1609.2</h4>
 
     <p>
-        define formatos e
-processamento seguros de mensagens
-
-        PadrÃ£o responsÃ¡vel pela seguranÃ§a da rede. AtravÃ©s dele Ã© definido formatos e processamento de mensagens seguros. AlÃ©m disso, tambÃ©m define quando se deve utilizar uma mensagem segura e como ocorrerÃ¡ o processamento dessa mensagem.
+        Responsável pela segurança para o gerenciamento de mensagens e das aplicações. 
+        Também define um processamento de mensagens seguro e quando estes deverão ser realizados, tudo isso utilizando os métodos de segurança 
+        utilizados pelos sistemas WAVE e DSRC.
     </p>
 
     <h4>IEEE P1609.3</h4>
 
     <p>
-        especifica os servic¸os das camadas de rede e de transporte, incluindo o enderec¸amento e o roteamento
-        Alem disso, ´
-o padrao 1609.3 define a MIB ( ˜ Management Information Base) para a pilha WAVE
-
-
-        PadrÃ£o que define os serviÃ§os das camadas de rede e de transporte. Para isso, sÃ£o definidos os planos de gerenciamento e o plano de dados.
-
-        Plano de Gerenciamento - Ã‰ responsÃ¡vel pela manutenÃ§Ã£o e configuraÃ§Ã£o do sistema.
+        Define serviços das camadas de rede e transporte através do: 
+        <ul>
+            <li> Plano de gerenciamento: </li> onde são realizadas configurações.
+            <li> Plano de dados: </li> onde são realizados os serviços de comunicação.
+        </ul>
         
-        Plano de Dados - Ã‰ responsÃ¡vel pelos serviÃ§os de comunicaÃ§Ã£o e envio dos dados produzidos pelas aplicaÃ§Ãµes WAVE.
+        O WAVE tem suporte a duas pilhas de protocolo: o IPV6 e o WSMP (WAVE Short-Message Protocol). 
+        Pois necessita sustentar comunicações de alta prioridade e sensíveis ao tempo e transações que utilizam as transmissões TCP/UDP.
     </p>
 
     <h4>IEEE P1609.4</h4>
 
     <p>
-        PadrÃ£o que define a utilizaÃ§Ã£o de mÃºltiplos canais pela arquitetura WAVE.
+        Define a realização de operaçoes em multiplos canais da arquitetura.
+    </p>
+
+    <h4>IEEE P1609.11</h4>
+
+    <p>
+        Define os serviços e o formato das mensagens necessárias para os sistemas de pagamentos eletrônicos seguros.
     </p>
 
   </div>
@@ -447,6 +441,7 @@ TrafficView, SOTIS, Eureka-PROMETHEUS
         <li> Yousefi, S., Altman, E., El-Azouzi, R. e Fathy, M. (2008). Analytical model for 
             connectivity in vehicular ad hoc networks. IEEE Transactions on Vehicular Technology, 57(6):3341–3356.</li>
         <li> https://www.gta.ufrj.br/grad/01_2/802-mac/R802_11.htm</li>
+        <li> https://app.uff.br/riuff/handle/1/10457 </li>
       </ol>
   </div>
 
@@ -460,9 +455,7 @@ TrafficView, SOTIS, Eureka-PROMETHEUS
         <li>R. Alves, I. Campbell, R. Couto, M. Campista, I. Moraes, M. Rubinstein,
             L. Costa, O. C. M. B. Duarte, and M. Abdalla, Redes Veiculares: Princípios,
             Aplica c ̃oes e Desafios, pp. 199–254. 05 2009.</li>
-        <li>R. Alves, I. Campbell, R. Couto, M. Campista, I. Moraes, M. Rubinstein,
-            L. Costa, O. C. M. B. Duarte, and M. Abdalla, Redes Veiculares: Princípios,
-            Aplica c ̃oes e Desafios, pp. 199–254. 05 2009.</li>
+        <li>https://app.uff.br/riuff/handle/1/10457</li>
         <li>https://iot-automotive.news/att-and-gm-redefine-automotive-connectivity-with-5g/</li>
     </ol>
   </div>
