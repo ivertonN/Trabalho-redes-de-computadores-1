@@ -56,22 +56,34 @@
 
   <div class='conteudo' id='arquitetura' style="padding:0 16px">
     <h3>Arquitetura de Redes Veiculares</h3>
-    <p>As redes de computadores veiculares podem ser classificadas em três grandes grupos: ad hoc puro (V2V), infraestruturada (V2I) e híbrida. 
-        No entanto, a maioria das redes de computadores veiculares reais é híbrida, uma vez que é quase impossível implementar uma rede pura 
-        de qualquer um dos outros dois tipos. 
-
-        No ad hoc puro, não há nenhuma forma de comunicação entre os veículos e nenhum veículo especializado. 
-        Cada veículo é responsável por determinar o melhor caminho para seus pacotes de dados e pode se comunicar diretamente com qualquer 
-        outro veículo na rede. Infraestruturada, por outro lado, há pelo menos um veículo especializado na rede, conhecido como estação base 
-        ou ponto de acesso, que os veículos se comunicam. Finalmente, no tipo híbrido, existem pelo menos algumas estações base, mas os veículos 
-        também podem se comunicar diretamente uns com os outros, se necessário.
-        
-        A arquitetura da rede de computadores veicular desempenha um papel importante no desempenho da rede. 
-        Por exemplo, a arquitetura de rede híbrida é geralmente considerada a melhor opção, pois oferece a melhor combinação 
-        de desempenho e robustez. No entanto, a arquitetura de rede certa depende do objetivo da rede e do ambiente em que ela 
-        será implementada.
+    <p>
+        A arquitetura de redes veiculares define como os nós dessa rede irão se comunicar. 
+        Atualmente pode-se classificar três arquiteturas básicas:<b>ad hoc puro</b>(Vehicular Ad hoc NETwork - VANET),<b>infraestruturada</b>e<b>híbrida</b>.
     </p>
-
+    <h4>
+        Ad hoc puro
+    </h4>
+    <p>
+        Nesta arquitetura, os veículos se comunicam uns com os outros sem a presença de qualquer elemento centralizador ou de suporte externo, tornado essa a arquitetura mais simples a ser implementada.
+        Entretanto apresenta como principal desvantagem o fato de que a conectividade da rede fica dependente da densidade e do padrão de distribuição dos veículos no espaço urbano.
+        Essa arquitetura também é conhecida por V2V (Vehicle-to-Vehicle).
+    </p>
+    <h4>
+        Infraestruturada
+    </h4>
+    <p>        
+        Justamente a fim de resolver os problemas de conectividade da arquitetura ad hoc puro, a arquitetura infraestruturada implementa nós estáticos distribuídos ao longo do espaço urbano.
+        Esses nós servem como intermediários das comunicações entre os veículos e possibilitam a comunicação com outras redes, por exemplo, a Internet.
+        Ao resolver o problema da arquitetura ad hoc puro, a arquitetura infraestruturada faz com que a plena comunicação entre os veículos só seja garantida mediante a um extenso número desses nós estáticos, o que causa uma elevação de custos para sua implementação.
+        Essa arquitetura também é conhecida por V2I (Vehicle-to-Infrastructure).
+    </p>
+    <h4>
+        Híbrida
+    </h4>
+    <p>
+        A arquitetura híbrida vem como uma arquitetura intermediária entre as anteriores.
+        É utilizado uma infraestrutura mínima a fim de aumentar a conectividade da rede e possibilitar a comunicação com redes externas, porém os veículos são capazes de se comunicar entre si.
+    </p>
     <figure>
         <img src="arquitetura_comunicacao.png" alt="arquitetura_comunicacao">
         <figcaption>Figura 6</figcaption>
