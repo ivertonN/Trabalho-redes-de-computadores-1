@@ -180,8 +180,8 @@
         irão percorrer pela rede. Seu maior desafio nessa aplicação tem como base a propria natureza de rede veícular, que é extremamente instável 
         e apresenta nos moveis.
 
-        Para realizar o cálculo de rotas é necessário a utilização de alguns protocolos que de acordo com suas caracteristicas, 
-        podem ser divididos nas categorias abaixo:
+        Para realizar o cálculo de rotas é necessário a utilização de alguns protocolos que de acordo com suas caracteristicas, podem ser divididos 
+        nas categorias abaixo:
         
         <ul>
             <li><b> Baseado em topologia </b></li>
@@ -202,22 +202,43 @@
 
             <li><b> Baseado em posicionamento ou geográfico </b></li>
             <p>
-                Protocolos que tem como objetivo dar escalabilidade para as redes veículares, sem a necessidade de armazenamento de rotas para tod  s os nos da rede. Para isso, as requisiçoes da origem são dispersadas pela rede através de seus vizinhos em direção ao destino. Sendo necessário saber perviamente a localização dos vizinhos e do destinatário no momento do envio das requisiçoes,
+                Protocolos que tem como objetivo dar escalabilidade para as redes veículares, sem a necessidade de armazenamento de rotas para todos os nos da rede. 
+                Para isso, as requisiçoes da origem são dispersadas pela rede através de seus vizinhos em direção ao destino. 
+                Sendo necessário saber perviamente a localização dos vizinhos e do destinatário no momento do envio das requisiçoes,
             
                 Entre seus protocolos, podemos citar: GPSR, GSR, SAR, A-STAR, CAR e LOUVRE
+
+                Abaixo podemos ver o funcionamento do protocolo GPSR, utilizando os algoritmos no modo guloso e modo perímetro.
             </p>
+
+            <figure>
+                <img src="baseado_em_posicionamento.png" alt="baseado_em_posicionamento">
+                <figcaption>Figura 8</figcaption>
+            </figure>
 
             <li><b> oportunismo </b></li>
             <p>
-                Tem como objetivo lidar com os possíveis atrasos e desconexoes que podem surgir nas redes veículares, seja em razão de vias pouco movimentadas ou a gradual adoção dessas redes.
+                Tem como objetivo lidar com os possíveis atrasos e desconexoes que podem surgir nas redes veículares, 
+                seja em razão de vias pouco movimentadas ou a gradual adoção dessas redes.
+
+                Para isso utiliza informaçoes, como velocidade e direção de movimento dos veículos.
             
             Entre seus protocolos, podemos citar: MoVe, MaxProp, SKVR, VADD, L-VADD, D-VADD, H-VADD.
+
+            Abaixo podemos ver um exemplo de funcionamento do protocolo.
             </p>
+
+            <figure>
+                <img src="oportunistico.png" alt="oportunistico">
+                <figcaption>Figura 9</figcaption>
+            </figure>
 
             <li><b> Disseminação </b></li>
 
             <p>
-                Este último tem como objetivo enviar mensagens para vários destinatários utilizando proximos, pois é utilizado em aplicaçoes onde temos o objetivo de disseminar informação de forma eficiente e rápida pela rede, como por exemplo, acidentes, emergências, congestionamentos ou aplicaçoes baseadas em localização.
+                Este último tem como objetivo enviar mensagens para vários destinatários utilizando proximos, 
+                pois é utilizado em aplicaçoes onde temos o objetivo de disseminar informação de forma eficiente e rápida pela rede, 
+                como por exemplo, acidentes, emergências, congestionamentos ou aplicaçoes baseadas em localização.
         
             Entre seus protocolos, podemos citar: UMB, SODAD e ZOR.
             </p>
@@ -457,6 +478,8 @@ TrafficView, SOTIS, Eureka-PROMETHEUS
             Aplica c ̃oes e Desafios, pp. 199–254. 05 2009.</li>
         <li>https://app.uff.br/riuff/handle/1/10457</li>
         <li>https://iot-automotive.news/att-and-gm-redefine-automotive-connectivity-with-5g/</li>
+        <li>Comparativo entre Algoritmos de Roteamento Utilizados em Redes Veiculares - RenÃª R. Oliveira, Michelle S. Wangham</li>
+        <li>Comparativo entre Algoritmos de Roteamento Utilizados em Redes Veiculares - RenÃª R. Oliveira, Michelle S. Wangham</li>
     </ol>
   </div>
 
